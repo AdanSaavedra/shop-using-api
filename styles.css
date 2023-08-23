@@ -1,0 +1,90 @@
+:root{
+    --green: RGB(223, 242, 216);
+    --black-grey: rgb(54, 73, 78);
+    --black: rgb(0, 0, 0);
+    --grey: rgb(89, 112, 129);
+    --violet: rgb(135, 68, 222);
+    --white: rgb(249, 246, 238)
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--green);
+}
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 100px;
+    font-weight: 400;
+    color: var(--grey);
+    background-color: var(--white);
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 12px -4px rgba(0,0,0,0.35);
+}
+.fisc{
+    color: var(--black-grey);
+    font-weight: 300;
+}
+.container{
+    width: 1200px;
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    height: 400px;
+}
+.cardContainer{
+    width: 566px;
+    height: 352px;
+    background-color: var(--white);
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 10px 12px -4px rgba(0,0,0,0.35);
+}
+.imgContainer{
+    margin: 0;
+    width: 404px;
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+.cardText{
+    width: 260px;
+    padding: 26px 4px 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cardTitle{
+    margin: 0;
+    font-size: 26px;
+    color: var(--black-grey);
+    font-weight: 300;
+}
+.cardPrice{
+    font-size: 24px;
+    color: var(--grey);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
